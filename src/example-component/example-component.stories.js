@@ -6,4 +6,4 @@ export default {
   title: 'ExampleComponent',
 };
 
-export const defaultState = () => <ExampleComponent />;,,
+export const defaultState = () => <ExampleComponent />;
