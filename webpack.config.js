@@ -14,9 +14,17 @@ module.exports = {
         exclude: /(node_modules)/,
         use: ['babel-loader', 'eslint-loader'],
       },
+      {
+        test: /\.(css|scss)$/,
+        exclude: /(node_modules)/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
     ],
   },
   externals: {
     react: 'commonjs react',
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
 };
