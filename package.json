@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "build:docs": "build-storybook -c .storybook -o dist",
     "release": "standard-version",
-    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "lint": "./node_modules/.bin/eslint src/**/*.js src/**/*.jsx",
     "test": "jest --coverage"
   },
   "main": "lib/index.js",
